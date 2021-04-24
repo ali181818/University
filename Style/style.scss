@@ -1,0 +1,65 @@
+html{
+  line-height: 1.8;
+  font-family: monospace;
+}
+body{
+  display: flex;
+  flex-direction: column;
+  height : 100vh;
+  overflow: hidden;
+  background-image: linear-gradient(to top, #fbc2eb 0%, #a6c1ee 100%);
+  h2{
+    margin : 1.5rem auto;
+    font-weight: bold;
+    color : #2c3e50;
+  }
+  section {
+    display: flex;
+    flex-direction: column;
+    overflow-y: auto;
+    margin : 1rem auto;
+    width : 90%;
+    a{
+      margin: 1rem;
+      text-decoration: none;
+      border-radius: 25px;
+      background: #e0e0e0;
+      display:flex;
+      // box-shadow:  24px 24px 48px #bebebe,
+      //             -24px -24px 48px #ffffff;
+      svg{
+        width: 48px;
+        height: 48px;
+        margin : 1rem .7rem;
+      }
+      p{
+        margin : auto .7rem;
+        color:#16a085;
+        font-weight: bold;
+        font-size: 1.5rem;
+      }
+    }
+    &::-webkit-scrollbar{
+      width: 12px;
+      background-color: #F5F5F5;
+    }
+    &::-webkit-scrollbar-thumb{
+      border-radius: 10px;
+      box-shadow: inset 0 0 6px rgba(0,0,0,.3);
+      background-color: #555;
+    }
+    &::-webkit-scrollbar-track{
+      box-shadow: inset 0 0 6px rgba(0,0,0,0.3);
+      border-radius: 10px;
+      background-color: #F5F5F5;
+    }
+  }
+}
+
+@media(min-width:768px){
+  body{
+    section{
+      width: 70%;
+    }
+  }
+}
