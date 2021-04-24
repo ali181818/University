@@ -1,24 +1,27 @@
-@font-face {
-  font-family: "IRANSans";
-  src: url(./fonts/IRANSansWeb.eot);
-  src: url(./fonts/IRANSansWeb.eot?#iefix) format("embedded-opentype"), url(./fonts/IRANSansWeb.woff2) format("woff2"), url(./fonts/IRANSansWeb.woff) format("woff"), url(./fonts/IRANSansWeb.ttf) format("truetype");
-  font-weight: normal;
-  font-display: block;
+.designer {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  grid-column: 2;
+  margin-top: 0.65rem;
+  font-size: 1.1rem;
 }
-@font-face {
-  font-family: "IRANSans";
-  src: url(./fonts/IRANSansWeb_Medium.eot);
-  src: url(./fonts/IRANSansWeb_Medium.eot?#iefix) format("embedded-opentype"), url(./fonts/IRANSansWeb_Medium.woff2) format("woff2"), url(./fonts/IRANSansWeb_Medium.woff) format("woff"), url(./fonts/IRANSansWeb_Medium.ttf) format("truetype");
-  font-weight: bold;
-  font-display: block;
+.designer a {
+  background-color: #FAD961;
+  background-image: linear-gradient(45deg, #CA4246 0%, #E16541 40%, #E16541 70%, #F76B1C 70%);
+  background-size: 100%;
+  background-repeat: repeat;
+  background-clip: text;
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
 }
-@font-face {
-  font-family: "IRANSans";
-  src: url(./fonts/IRANSansWeb_Light.eot);
-  src: url(./fonts/IRANSansWeb_Light.eot?#iefix) format("embedded-opentype"), url(./fonts/IRANSansWeb_Light.woff2) format("woff2"), url(./fonts/IRANSansWeb_Light.ttf) format("truetype");
-  font-weight: lighter;
-  font-display: block;
-}
+
 @-webkit-keyframes AnimSlider {
   0% {
     opacity: 0;
@@ -27,6 +30,7 @@
     opacity: 100%;
   }
 }
+
 @keyframes AnimSlider {
   0% {
     opacity: 0;
@@ -53,7 +57,6 @@
 }
 html {
   direction: ltr;
-  font-family: "IRANSans";
   font-weight: normal;
   line-height: 1.8;
 }

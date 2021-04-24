@@ -1,27 +1,71 @@
 @font-face {
-  font-family: "IRANSans";
-  src: url(./fonts/IRANSansWeb.eot);
-  src: url(./fonts/IRANSansWeb.eot?#iefix) format("embedded-opentype"), url(./fonts/IRANSansWeb.woff2) format("woff2"), url(./fonts/IRANSansWeb.woff) format("woff"), url(./fonts/IRANSansWeb.ttf) format("truetype");
+  font-family: Vazir;
+  src: url("Vazir-Regular.eot");
+  src: url("Vazir-Regular.eot?#iefix") format("embedded-opentype"), url("Vazir-Regular.woff2") format("woff2"), url("Vazir-Regular.woff") format("woff"), url("Vazir-Regular.ttf") format("truetype");
   font-weight: normal;
-  font-display: block;
+  font-display: swap;
 }
 @font-face {
-  font-family: "IRANSans";
-  src: url(./fonts/IRANSansWeb_Medium.eot);
-  src: url(./fonts/IRANSansWeb_Medium.eot?#iefix) format("embedded-opentype"), url(./fonts/IRANSansWeb_Medium.woff2) format("woff2"), url(./fonts/IRANSansWeb_Medium.woff) format("woff"), url(./fonts/IRANSansWeb_Medium.ttf) format("truetype");
+  font-family: Vazir;
+  src: url("Vazir-Bold.eot");
+  src: url("Vazir-Bold.eot?#iefix") format("embedded-opentype"), url("Vazir-Bold.woff2") format("woff2"), url("Vazir-Bold.woff") format("woff"), url("Vazir-Bold.ttf") format("truetype");
   font-weight: bold;
-  font-display: block;
+  font-display: swap;
 }
 @font-face {
-  font-family: "IRANSans";
-  src: url(./fonts/IRANSansWeb_Light.eot);
-  src: url(./fonts/IRANSansWeb_Light.eot?#iefix) format("embedded-opentype"), url(./fonts/IRANSansWeb_Light.woff2) format("woff2"), url(./fonts/IRANSansWeb_Light.ttf) format("truetype");
-  font-weight: lighter;
-  font-display: block;
+  font-family: Vazir;
+  src: url("Vazir-Thin.eot");
+  src: url("Vazir-Thin.eot?#iefix") format("embedded-opentype"), url("Vazir-Thin.woff2") format("woff2"), url("Vazir-Thin.woff") format("woff"), url("Vazir-Thin.ttf") format("truetype");
+  font-weight: 100;
+  font-display: swap;
 }
+@font-face {
+  font-family: Vazir;
+  src: url("Vazir-Light.eot");
+  src: url("Vazir-Light.eot?#iefix") format("embedded-opentype"), url("Vazir-Light.woff2") format("woff2"), url("Vazir-Light.woff") format("woff"), url("Vazir-Light.ttf") format("truetype");
+  font-weight: 300;
+  font-display: swap;
+}
+@font-face {
+  font-family: Vazir;
+  src: url("Vazir-Medium.eot");
+  src: url("Vazir-Medium.eot?#iefix") format("embedded-opentype"), url("Vazir-Medium.woff2") format("woff2"), url("Vazir-Medium.woff") format("woff"), url("Vazir-Medium.ttf") format("truetype");
+  font-weight: 500;
+  font-display: swap;
+}
+@font-face {
+  font-family: Vazir;
+  src: url("Vazir-Black.eot");
+  src: url("Vazir-Black.eot?#iefix") format("embedded-opentype"), url("Vazir-Black.woff2") format("woff2"), url("Vazir-Black.woff") format("woff"), url("Vazir-Black.ttf") format("truetype");
+  font-weight: 900;
+  font-display: swap;
+}
+.designer {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  margin-top: 0.65rem;
+  font-size: 1.1rem;
+}
+.designer a {
+  background-color: #FAD961;
+  background-image: linear-gradient(45deg, #CA4246 0%, #E16541 40%, #E16541 70%, #F76B1C 70%);
+  background-size: 100%;
+  background-repeat: repeat;
+  background-clip: text;
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+}
+
 html {
   direction: rtl;
-  font-family: "IRANSans";
+  font-family: "Vazir";
   font-weight: normal;
   line-height: 1.8;
 }
@@ -30,6 +74,7 @@ body {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
+  height: 95vh;
   -webkit-box-orient: vertical;
   -webkit-box-direction: normal;
       -ms-flex-direction: column;

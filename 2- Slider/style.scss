@@ -1,11 +1,11 @@
-@import "font";
+// @import ".././fonts/font";
+@import ".././Global/globalCss";
+@import ".././Global/variable";
 @import "anim";
-
-$color-white : #ecf0f1;
 
 html{
   direction: ltr;
-  font-family: "IRANSans";
+  // font-family: "Vazir";
   font-weight: normal;
   line-height: 1.8;
 }

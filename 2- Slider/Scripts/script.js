@@ -20,17 +20,17 @@ function animImg() {
 setInterval(() => {
   i = i == imgList.length - 1 ? 0 : i + 1;
   animImg();
-  img.src = `./img/${imgList[i]}.jpg`;
+  img.src = `./../images/${imgList[i]}.jpg`;
 }, 5000);
 
 next.addEventListener('click',() => {
   i = i == imgList.length - 1 ? 0 : i + 1;
   animImg();
-  img.src = `./img/${imgList[i]}.jpg`;
+  img.src = `./../images/${imgList[i]}.jpg`;
 });
 
 prev.addEventListener('click',() => {
   i = i == 0 ? 2 : i - 1;
   animImg();
-  img.src = `./img/${imgList[i]}.jpg`;
+  img.src = `./../images/${imgList[i]}.jpg`;
 });
