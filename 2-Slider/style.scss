@@ -15,7 +15,7 @@ body{
   justify-content:center;
   align-items:center;
   margin-top: 40px;
-  grid-template-columns: 300px 300px 300px;
+  grid-template-columns: 100px 100px 100px;
   a{
     text-decoration: none;
   }
@@ -67,12 +67,16 @@ body{
   section{
     display: grid;
     grid-column: 1 / 4;
-    grid-template-columns: 286.66px 286.66px 286.66px;
+    grid-template-columns: 80px 80px 80px;
     gap : 20px;
   }
 }
 
-/* @media(min-width:768px){
+@media(min-width:768px){
   body{
+    grid-template-columns: 300px 300px 300px;
+    section{
+      grid-template-columns: 286.66px 286.66px 286.66px;
+    }
   }
-} */
+}

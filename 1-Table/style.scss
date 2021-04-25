@@ -11,8 +11,8 @@ html{
 
 body{
   display:flex;
-  height: 95vh;
   flex-direction:column;
+  overflow:auto;
   header{
     width: 100%;
     display: flex;
@@ -103,6 +103,7 @@ body{
 
 @media(min-width:768px){
   body{
+    height: 95vh;
     section{
       flex-direction:row;
       article{
