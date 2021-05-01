@@ -1,0 +1,34 @@
+html {
+  min-height: 100%;
+  font-family: monospace;
+}
+html body {
+  background: no-repeat linear-gradient(135deg, #FFF6B7 10%, #F6416C 100%);
+  min-height: 100%;
+}
+
+h2 {
+  text-align: center;
+}
+
+section {
+  height: 100%;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -ms-flex-wrap: wrap;
+      flex-wrap: wrap;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  margin: auto;
+  color: #2980b9;
+  font-size: 2rem;
+  font-weight: bold;
+}
+section span {
+  margin: 0.2rem;
+}
