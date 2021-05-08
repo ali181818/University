@@ -70,7 +70,7 @@ formMessage.addEventListener('submit', e => {
       Data[input.name] = input.value;
   })
   Data.gender = document.querySelector('#form-message input[name="gender"]:checked').value || 'Male';
-  Ajax('GET','https://aliallameh.ir/Project/Univercity/4-Form/api.php',Data)
+  Ajax('GET','./api.php',Data)
   .then( response => {
     Modal.classList.add('show-modal','anim-modal');
     Modal.classList.remove('hide-modal','anim-modal-rev');  

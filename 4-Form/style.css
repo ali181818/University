@@ -74,6 +74,7 @@ form {
       -ms-flex-direction: column;
           flex-direction: column;
   padding: 1rem;
+  overflow-y: auto;
 }
 form .inline {
   display: -webkit-box;

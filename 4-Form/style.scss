@@ -27,6 +27,7 @@ form{
   display: flex;
   flex-direction: column;
   padding: 1rem;
+  overflow-y: auto;
   .inline{
     display: flex;
     align-items: center;
