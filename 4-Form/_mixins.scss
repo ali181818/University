@@ -1,0 +1,17 @@
+@mixin button ($width , $color) {
+  width: $width;
+  background-color: $color;
+  color: $white-color;
+  outline: none;
+  font-weight: bold;
+  font-size: 1.3rem;
+  border: none;
+  border-radius: 4px;
+  padding : 1rem;
+  margin-top: 1.4rem;
+  filter: drop-shadow(3px 3px 1.5px black);
+  &:hover{
+    cursor: pointer;
+    background-color: darken($color,15%);
+  }
+}

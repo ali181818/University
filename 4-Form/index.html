@@ -1,0 +1,51 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link rel="stylesheet" href="./style.min.css">
+  <title>Form</title>
+</head>
+<body>
+  <form method="post" id="form-valid">
+    <h2>PHP Form Validation</h2>
+    <label>Name :
+      <input type="text" name="name">
+    </label>
+    <label>Email :
+      <input type="email" name="email">
+    </label>
+    <label>Website :
+      <input type="url" name="website">
+    </label>
+    <button type="submit">Send</button>
+  </form>
+  <form method="post" id="form-message">
+    <h2>PHP Form Message</h2>
+    <label>Name :
+      <input type="text" name="name">
+    </label>
+    <label>Address :
+      <input type="text" name="address">
+    </label>
+    <label class="inline">Gender:
+      <input type="radio" name="gender" value="Male" id="Male" checked>
+      <label class="radio" for="Male" value="Male">Male
+      </label>
+      <input type="radio" name="gender" value="Female" id="Female">
+      <label class="radio" for="Female" value="Female">Female
+      </label>
+      <input type="radio" name="gender" value="Other" id="Other">
+      <label class="radio" for="Other" value="Other">Other
+      </label>
+    </label>
+    <button type="submit">Send</button>
+  </form>
+  <div class="modal hide-modal">
+    <div class="content"></div>
+    <button>OK</button>
+  </div>
+  <script src="./Scripts/script.js"></script>
+</body>
+</html>
