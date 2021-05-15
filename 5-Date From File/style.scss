@@ -1,0 +1,27 @@
+html {
+  min-height:100%;
+  font-family: monospace;
+  body {
+    background: no-repeat linear-gradient(90deg, rgba(2,0,36,1) 0%, rgba(9,9,121,1) 35%, rgba(0,212,255,1) 100%);
+    min-height:100%;
+  }
+}
+h2{
+  text-align: center;
+  color: #c0392b;
+}
+section{
+  height:100%;
+  display: flex;
+  flex-wrap: wrap;
+  justify-content:center;
+  align-items: center;
+  margin:auto;
+  color : #d35400;
+  font-size : 2rem;
+  font-weight: bold;
+  line-height: 2;
+  span{
+    margin : .2rem;
+  }
+}
