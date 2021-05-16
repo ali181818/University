@@ -14,14 +14,14 @@
   <section>
     <?php
       foreach(file('./Date.txt') as $line) {
-        echo (date($line,time())) . '<br>';
+        echo strftime("%B %d %Y, %X %Z",strtotime($line)) . '<br>';
       }
       // Or
       // $handle=fopen("./Date.txt","r");
       // while (($line = fgets($handle)) !== false) {
-      //   echo (date($line,time())) . '<br>';
+      //   echo strftime("%B %d %Y, %X %Z",strtotime($line)) . '<br>';
       // }
-    ?>
+    // ?>
   </section>
 </body>
 </html>
