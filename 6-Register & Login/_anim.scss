@@ -1,0 +1,16 @@
+@keyframes AnimSlider{
+  0%{
+    opacity: 0;
+  }
+  100%{
+    opacity: 100%;
+  }
+}
+@keyframes AnimSlider-rev{
+  0%{
+    opacity: 100%;
+  }
+  100%{
+    opacity: 0;
+  }
+}

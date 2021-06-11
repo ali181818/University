@@ -1,0 +1,60 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link rel="stylesheet" href="./style.css">
+  <title>6-Register & Login</title>
+</head>
+<body>
+  <header>
+    <span id="next">
+      <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 492.004 492.004"><path d="M382.678 226.804L163.73 7.86C158.666 2.792 151.906 0 144.698 0s-13.968 2.792-19.032 7.86l-16.124 16.12c-10.492 10.504-10.492 27.576 0 38.064L293.398 245.9l-184.06 184.06c-5.064 5.068-7.86 11.824-7.86 19.028 0 7.212 2.796 13.968 7.86 19.04l16.124 16.116c5.068 5.068 11.824 7.86 19.032 7.86s13.968-2.792 19.032-7.86L382.678 265c5.076-5.084 7.864-11.872 7.848-19.088.016-7.244-2.772-14.028-7.848-19.108z"/></svg>
+    </span>
+    <img src="./../images/Apple.jpg" class="slider-anim" alt="">
+    <span id="prev">
+      <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 492.004 492.004"><path d="M382.678 226.804L163.73 7.86C158.666 2.792 151.906 0 144.698 0s-13.968 2.792-19.032 7.86l-16.124 16.12c-10.492 10.504-10.492 27.576 0 38.064L293.398 245.9l-184.06 184.06c-5.064 5.068-7.86 11.824-7.86 19.028 0 7.212 2.796 13.968 7.86 19.04l16.124 16.116c5.068 5.068 11.824 7.86 19.032 7.86s13.968-2.792 19.032-7.86L382.678 265c5.076-5.084 7.864-11.872 7.848-19.088.016-7.244-2.772-14.028-7.848-19.108z"/></svg>
+    </span>
+  </header>
+  <section>
+    <article class="info hide"></article>
+    <article class="register" href="./Pages/register.php">
+      <form method="post" id="form-register">
+        <h2>Register</h2>
+        <label>Name :
+          <input type="text" name="name">
+        </label>
+        <label>Family :
+          <input type="text" name="family">
+        </label>
+        <label>Email :
+          <input type="email" name="email">
+        </label>
+        <label>Password :
+          <input type="password" name="password">
+        </label>
+        <button type="submit">Register</button>
+      </form>
+    </article>
+    <article class="login" href="./Pages/login.php">
+      <form method="post" id="form-login">
+        <h2>Login</h2>
+        <label>Email :
+          <input type="email" name="email">
+        </label>
+        <label>Password :
+          <input type="password" name="password">
+        </label>
+        <button type="submit">Login</button>
+      </form>
+    </article>
+  </section>
+  <div class="designer"><a href="https://aliallameh.ir" target="_blank" rel="referrer">Design & Develop by Ali Allameh</a></div>
+  <div class="modal hide">
+    <div class="content"></div>
+    <button>OK</button>
+  </div>
+  <script src="./Scripts/script.js"></script>
+</body>
+</html>

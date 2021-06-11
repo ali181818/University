@@ -1,0 +1,195 @@
+// @import ".././Fonts/font";
+@import ".././Global/globalCss";
+@import ".././Global/variable";
+@import './../Style/mixins';
+@import './../Style/animation';
+
+$green-color : #27ae60;
+$blue-color : #2980b9;
+$white-color : #ecf0f1;
+$black-color : #2c3e50;
+
+html{
+  direction: ltr;
+  // font-family: "Vazir";
+  font-weight: normal;
+  line-height: 1.8;
+}
+
+body{
+  display:grid;
+  justify-content:center;
+  align-items:center;
+  margin-top: 40px;
+  position: relative;
+  grid-template-areas: 
+  "header"
+  "section"
+  "designer"
+  ;
+  a{
+    text-decoration: none;
+  }
+  header{
+    position: relative;
+    grid-area: header;
+    img {
+      width: 100%;
+      user-select:none;
+      border-radius: 7px;
+    }
+    span {
+      position: absolute;
+      width: 32px;
+      svg{
+        fill:$color-white;
+      }
+      &:hover{
+        cursor: pointer;
+      }
+    }
+    #next{
+      top:50%;
+      right:0;
+    }
+    #prev{
+      top: 50%;
+      left:0;
+      transform:rotate(180deg);
+    }
+    .slider-anim{
+      animation: AnimSlider 200ms ease-in-out;
+    }
+    .slider-anim-rev{
+      animation: AnimSlider-rev 200ms ease-in-out;
+    }
+  }
+  section{
+    display: grid;
+    grid-area: section;
+    grid-template-areas:
+    "info"
+    "login"
+    "register"
+    ;
+    gap : 20px;
+    .info{
+      flex-direction: column;
+      font-size: 1.2rem;
+      font-weight: bold;
+      justify-content: center;
+      button{
+        @include button( 25% , $blue-color );
+      }
+    }
+    form{
+      width: 90%;
+      display: flex;
+      flex-direction: column;
+      padding: 1rem;
+      overflow-y: auto;
+      .inline{
+        display: flex;
+        align-items: center;
+      }
+      label{
+        width: 100%;
+        font-weight: bold;
+        input{
+          width: calc(100% - 2rem);
+          height: 3rem;
+          margin : .7rem auto;
+          padding: 0 1rem;
+          border: 1px solid #2c3e50;
+          border-radius: 4px;
+          // text-align: center;
+          font-weight: bold;
+        }
+        input[type="radio"] , .radio{
+          &:hover{
+            cursor: pointer;
+          }
+        }
+      }
+      button{
+        @include button( 100% , $green-color );
+      }
+    }
+    #form-login{
+      grid-area: "login";
+    }
+    #form-register{
+      grid-area: "register";
+    }
+  }
+  .modal{
+    display: flex;
+    position: absolute;
+    margin: auto;
+    top: 38%;
+    width: 90%;
+    height: fit-content;
+    background-color: $white-color;
+    color: $black-color;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    border-radius: 7px;
+    padding : 1rem;
+    .content{
+      white-space: pre-line;
+      font-size: 1.6rem;
+      font-weight: bold;
+    }
+    button{
+      @include button( 25% , $blue-color );
+    }
+  }
+  .hide{
+    display: none;
+  }
+  .show{
+    display: flex;
+  }
+  .anim-modal{
+    animation: anim-modal 1s 0s ease-in-out;
+  }
+  .anim-modal-rev{
+    animation: anim-modal-rev 1s 0s ease-in-out;
+  }
+  .designer{
+    grid-area: designer;
+  }
+}
+
+@media(min-width:768px){
+  body{
+    width: 100%;
+    margin: 1rem auto;
+    header{
+      width: 45%;
+      margin: auto;
+      #next{
+        top: 45%;
+      }
+      #prev{
+        top:  45%;
+      }
+    }
+    section{
+      grid-template-areas:
+        "info info"
+        "login register"
+      ;
+    }
+    .modal{
+      top: 0;
+      bottom: 0;
+      left: 0;
+      right: 0;
+      width: 40%;
+      // height: 35%;
+      padding : 2rem;
+    }
+  }
+}
